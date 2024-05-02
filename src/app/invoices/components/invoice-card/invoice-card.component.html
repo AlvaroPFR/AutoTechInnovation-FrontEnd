@@ -1,0 +1,12 @@
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="!loading">
+    <div *ngFor="let client of clients"  class="invoice-card">
+        <div *ngFor="let invoice of client.invoices" class="invoice-card-content">
+            <p>{{ invoice.number }}</p>
+            <p>{{ invoice.issue_date }}</p>
+            <p>S/.{{ invoice.total }}</p>
+            <p>Paid</p>
+            <button (click)="preview(client.id,invoice.number)">Ver</button>
+        </div>
+    </div>
+</div>
