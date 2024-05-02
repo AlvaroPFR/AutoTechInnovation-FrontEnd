@@ -1,0 +1,73 @@
+# Compiled output
+/dist
+
+# Dependencies
+/node_modules
+
+# IDE and editor specific files
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode (excluding essential configurations)
+.vscode/*
+!**/settings.json
+!**/tasks.json
+!**/launch.json
+!**/extensions.json
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+npm-debug.log
+yarn-error.log
+/coverage
+
+# Testing
+/e2e/*.js
+/e2e/*.map
+
+# Caching
+/.sass-cache
+/connect.lock
+
+# Misc
+/typings
+
+# Build artifacts
+/out-tsc
+/tmp
+
+# Secret files
+*secret.js
+
+# CI temporary files
+month.txt
+
+# Specific IDE extensions
+.devcontainer/*
+!**.devcontainer/README.md
+!**.devcontainer/recommended-devcontainer.json
+!**.devcontainer/recommended-Dockerfile
+
+# User specific configurations
+.bazelrc.user
+.ng-dev.user*
+.notes.md
+baseline.json
+
+# VSCode extension history
+.history
+
+# Husky configuration
+.husky/_
+
+# Angular specific (avoid modifying unless necessary)
+!.angular/
